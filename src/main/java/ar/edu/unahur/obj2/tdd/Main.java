@@ -1,7 +1,10 @@
 package ar.edu.unahur.obj2.tdd;
 
 public class Main {
+
     public static void main(String[] args) {
-        System.out.println("Hello world!");
-    }
+        
+    CajaFuerte caja = new CajaFuerte(1234);
+     caja.getClave();
+}   
 }
