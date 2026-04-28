@@ -21,17 +21,18 @@ public class CajaFuerte {
     }
     
   }
-  public void EstadoActual(){
+  public boolean EstadoActual(){
     if (abierto == true){
-      System.out.println("La caja de fuerte esta abierta");
+      return true;
     }
     else{
       abierto = false;
-      System.out.println("La caja fuerte esta cerrada");
+      return false;
     }
   }
-  public void CerrarCajaFuerte(){
+  public boolean CerrarCajaFuerte(){
     abierto = false;
+    return abierto;
   }
 
   public int getClave() {
